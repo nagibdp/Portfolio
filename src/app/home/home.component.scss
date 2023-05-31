@@ -1,0 +1,180 @@
+@use "../../variables";
+@use "../../mixins";
+
+.divMain {
+  position: absolute;
+  top: 0;
+  background-color: variables.$violet;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+
+  &__divLeft {
+    width: 40%;
+    position: relative;
+    display: grid;
+    grid-template-rows: 3fr 2fr;
+    user-select: none;
+  }
+  &__divRight {
+    width: 60%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+}
+
+.divLeft {
+  &__divhs {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    font-family: Leixo;
+    color: variables.$white;
+  }
+  &__h1--1 {
+    font-size: mixins.pxToRem(70);
+    margin: 0 mixins.pxToRem(60) mixins.pxToRem(0); //20
+    //background-color: violet;
+    z-index: 100;
+  }
+  &__h1--2 {
+    z-index: 99;
+    font-size: mixins.pxToRem(70);
+    margin: 0 mixins.pxToRem(60) mixins.pxToRem(0); //15
+    color: variables.$green;
+    position: absolute;
+    //background-color: red;
+  }
+  &__h1--3 {
+    z-index: 98;
+    font-size: mixins.pxToRem(70);
+    margin: 0 mixins.pxToRem(60) mixins.pxToRem(0); //10
+    color: variables.$pink;
+    position: absolute;
+  }
+  &__h1--4 {
+    z-index: 97;
+    font-size: mixins.pxToRem(70);
+    margin: 0 mixins.pxToRem(60) mixins.pxToRem(0); //0
+    color: variables.$yellow;
+    position: absolute;
+  }
+  &__divLinks {
+    /* display: flex;
+    align-items: flex-start; */
+    /* display: grid;
+    grid-template-columns: repeat(3, 1fr);    
+    column-gap: mixins.pxToRem(15); 
+    align-items: flex-start; */
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: mixins.pxToRem(30) mixins.pxToRem(55) 0 mixins.pxToRem(65); // 40 55
+    position: relative;
+  }
+}
+
+.divLinks {
+  &__div {
+    margin: 0 mixins.pxToRem(15);
+    width: 100%;
+    height: 100%;
+    position: relative;
+    height: mixins.pxToRem(47);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__a {
+    -webkit-user-drag: none;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    //background-color: goldenrod;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &--text {
+      -webkit-user-drag: none;
+      text-decoration: none;
+      margin: 0;
+      position: absolute;
+      transform: translate(0);
+      color: variables.$violet;
+      font-family: OCRASTD;
+      font-size: mixins.pttToRem(30);
+      font-weight: bold;
+    }
+
+    &--proyects {
+      background-color: variables.$yellow;
+    }
+    &--about {
+      background-color: variables.$pink;
+    }
+    &--contact {
+      background-color: variables.$green;
+    }
+  }
+}
+
+.divRight {
+  &__divContainer {
+    z-index: 16;
+    position: absolute;
+    width: 75%;
+    height: mixins.pxToRem(400);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(0);
+  }
+  &__card {
+    width: mixins.pxToRem(550);
+    height: mixins.pxToRem(350);
+    position: absolute;
+    cursor: pointer;
+    user-select: none;
+    transition: transform 0.4s ease-out, opacity 0.3s ease-out,
+      z-index 0.4s ease-out;
+
+    &--1 {
+      z-index: 14;
+      opacity: 0.5;
+      transform: translateX(-20%);
+    }
+    &--2 {
+      z-index: 14;
+      opacity: 0.5;
+      transform: translateX(0%);
+    }
+    &--3 {
+      z-index: 14;
+      opacity: 0.5;
+      transform: translateX(20%);
+    }
+  }
+  &__img {
+    -webkit-user-drag: none;
+    min-width: mixins.pxToRem(200);
+    min-height: mixins.pxToRem(100);
+    height: 100%;
+    width: 100%;
+    max-width: mixins.pxToRem(600);
+    max-height: mixins.pxToRem(400);
+  }
+}
+
+.selected {
+  z-index: 20;
+  transform: translateX(0%);
+  opacity: 1;
+  width: mixins.pxToRem(600);
+  height: mixins.pxToRem(400);
+}

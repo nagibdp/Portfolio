@@ -1,0 +1,52 @@
+<div class="divMain">
+  <div class="divMain__divLeft divLeft" id="divLeft">
+    <div class="divLeft__divhs">
+      <h1 class="divLeft__h1--1">NAGIB<br />DELGADILLO</h1>
+      <p class="divLeft__h1--2">NAGIB<br />DELGADILLO</p>
+      <p class="divLeft__h1--3">NAGIB<br />DELGADILLO</p>
+      <p class="divLeft__h1--4">NAGIB<br />DELGADILLO</p>
+    </div>
+    <div class="divLeft__divLinks divLinks">
+      <div class="divLinks__div">
+        <a class="divLinks__a divLinks__a--proyects" routerLink="/proyects">
+        </a>
+        <a class="divLinks__a--text" routerLink="/proyects">Proyects</a>
+      </div>
+      <div class="divLinks__div">
+        <a class="divLinks__a divLinks__a--about" routerLink="/about">
+        </a>
+        <a class="divLinks__a--text" routerLink="/about">About</a>
+      </div>
+      <div class="divLinks__div">
+        <a class="divLinks__a divLinks__a--contact" routerLink="/contact">
+        </a>
+        <a class="divLinks__a--text" routerLink="/contact">Contact</a>
+      </div>
+    </div>
+  </div>
+  <div class="divMain__divRight divRight">
+    <div class="divRight__divContainer" id="divRight">
+      <div
+        class="divRight__card divRight__card--1"
+        id="homeCard1"
+        (click)="[rotateCards('card1')]"
+      >
+        <img class="divRight__img" src="assets/img/1.png" alt="portrait1" />
+      </div>
+      <div
+        class="divRight__card divRight__card--2 selected"
+        id="homeCard2"
+        (click)="[rotateCards('card2')]"
+      >
+        <img class="divRight__img" src="assets/img/2.png" alt="portrait2" />
+      </div>
+      <div
+        class="divRight__card divRight__card--3"
+        id="homeCard3"
+        (click)="[rotateCards('card3')]"
+      >
+        <img class="divRight__img" src="assets/img/3.jpg" alt="portrait3" />
+      </div>
+    </div>
+  </div>
+</div>
