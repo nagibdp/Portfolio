@@ -13,5 +13,5 @@ Design Idea
   <h3>Proyects:</h3>
   <img src="https://i.imgur.com/qQyeGcD.png" alt="csharp" width="1120" height="500"/>
   <h3>Proyects [Selection]:</h3>
-  <img src="https://i.imgur.com/xmHKFCy.png" alt="csharp" width="1120" height="500"/>
+  <img src="https://i.imgur.com/xmHKFCy.png" alt="csharp" width="1120" height="1000"/>
 </div>
