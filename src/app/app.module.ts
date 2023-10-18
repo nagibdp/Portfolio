@@ -10,7 +10,6 @@ import { ContactComponent } from './contact/contact.component';
 import { provideRouter, withComponentInputBinding } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { NgOptimizedImage } from '@angular/common';
-import { MouseMoveDirective } from './mouse-move.directive'
 
 
 
@@ -21,7 +20,6 @@ import { MouseMoveDirective } from './mouse-move.directive'
     ProyectsComponent,
     AboutComponent,
     ContactComponent,
-    MouseMoveDirective,
   ],
   imports: [
     BrowserModule,
